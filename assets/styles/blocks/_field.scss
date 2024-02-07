@@ -1,0 +1,43 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 38px;
+    width: 100%;
+
+    &__input {
+        font-family: var(--font-family-base);
+        font-size: 14px;
+        background-color: transparent;
+        height: var(--input-height);
+        width: 100%;
+        outline: 0;
+        border: var(--border);
+        padding-inline: 25px;
+        color: var(--color-accent);
+
+        &::placeholder {
+            color: var(--color-light);
+        }
+
+      
+        @include mobile {
+            padding-inline: 20px;
+        }
+      
+        &:focus {
+            border-color: var(--color-accent);
+            outline: none;
+        }
+      
+        &--textarea {
+            height: 100%;
+            padding-block: 18px;
+            resize: none;
+
+            @include tablet {
+                margin: 40px 0;
+            }
+        }
+    }
+}

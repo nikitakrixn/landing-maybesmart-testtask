@@ -1,0 +1,54 @@
+.header {
+    padding: 30px 40px 0 80px;
+
+    @include desktop {
+        padding: 20px;
+    }
+
+    @include mobile {
+        padding: 25px 20px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+
+        @include mobile {
+            flex-flow: row-reverse;
+        }
+    }
+
+    &__logo {
+        font-family: var(--font-family-accent);
+        @include fluid-text(40, 24);
+
+        span {
+            color: #DECBB6;
+        }
+
+        small {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__phone {
+        font-weight: 300;
+        @include fluid-text(24,18);
+
+        @include mobile {
+            color: var(--color-indian-khaki);
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
+}

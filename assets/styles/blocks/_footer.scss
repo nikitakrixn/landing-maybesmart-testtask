@@ -1,0 +1,81 @@
+.footer {
+    padding-block: 50px;
+
+    &__logo {
+        font-family: var(--font-family-accent);
+        font-size: 40px;
+
+        span {
+            color: #DECBB6;
+        }
+    }
+
+    &__navigation {
+        padding-block: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: flex-start;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 19px;
+        
+        & > * {
+            font-family: Proxima Nova, sans-serif
+        }
+
+        &--phone {
+            font-size: 25px;
+        }
+
+        &--personality {
+            color: var(--color-accent);
+            font-size: 16px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        column-gap: 20px;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        &-link {
+            font-family: Proxima Nova, sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include tablet {
+            align-items: center;
+        }
+
+        &--button {
+            color: var(--color-accent);
+            border: 1px solid var(--color-accent);
+
+            @include hover {
+                color: var(--color-light);
+            }
+
+            @include mobile {
+                color: var(--color-light);
+            }
+        }
+    }
+}

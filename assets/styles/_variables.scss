@@ -1,0 +1,23 @@
+:root {
+    --color-indian-khaki: #BBAB8B;
+    --color-light: #FFFFFF;
+    --color-accent: #A4926F;
+    --color-silk: #C0B6A9;
+    --color-zorba: #9A9288;
+    --color-outer-space: #233831;
+
+    --border: 1px solid var(--color-silk);
+
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-accent: 'Cormorant', serif;
+
+    --container-width: 1240px;
+    --container-padding-x: 20px;
+
+    --section-padding-y: 70px;
+
+    --input-height: 58px;
+    --button-height: 56px;
+
+    --transition-duration: 0.25s
+}

@@ -1,0 +1,9 @@
+.socials {
+    &__list {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 43px;
+        padding-block: 20px;
+    }
+}

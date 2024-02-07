@@ -1,0 +1,30 @@
+.burger-button {
+    @include square(52px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 15px;
+    cursor: pointer;
+
+    @include mobile {
+        align-items: flex-start;
+    }
+  
+    &__line {
+        height: 4px;
+        background: var(--color-light);
+        
+        @include mobile {
+            background: var(--color-indian-khaki);
+        }
+    }
+      &__line-top {
+        transition: transform 0.4s, width 0.4s;
+        width: 54px;
+    }
+      &__line-mid {
+        transition: transform 0.4s, opacity 0.3s linear;
+        width: 32px;
+    }
+}

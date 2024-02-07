@@ -1,0 +1,17 @@
+.section {
+    padding-block: var(--section-padding-y);
+
+    @include mobile {
+        padding-block: 10px;
+    }
+
+    @include tablet-above {
+        &--border {
+            border-bottom: 1px solid #4A685E;
+        }
+    }
+
+    &:last-child {
+        border-bottom: 1px solid #4A685E;
+    }
+}
