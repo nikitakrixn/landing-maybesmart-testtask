@@ -1,0 +1,28 @@
+.table {
+    width: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
+    border: 1px solid var(--color-silk);
+
+    &__header {
+        background-color: var(--color-accent);
+    }
+
+    &__head {
+        /* thead th */
+        font-weight: 500;
+        font-family: Proxima Nova, sans-serif;
+        font-size: 24px;
+      }
+    
+      &__row:not(:last-of-type) &__data {
+        border-bottom: 1px solid var(--color-silk);
+      }
+    
+      &__head,
+      &__data {
+        padding: 20px;
+        text-align: left;
+        white-space: nowrap;
+      }
+}

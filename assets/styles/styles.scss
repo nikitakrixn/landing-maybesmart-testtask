@@ -10,6 +10,7 @@
 
 @import 
     'blocks/button',
+    'blocks/checkbox',
     'blocks/field',
     'blocks/burger-button',
     'blocks/header',
@@ -17,6 +18,10 @@
     'blocks/history',
     'blocks/about',
     'blocks/contact-us',
-    'blocks/checkbox',
     'blocks/footer',
-    'blocks/socials';
+    'blocks/socials',
+    
+    'blocks/services/services',
+    'blocks/services/table',
+    'blocks/services/cross-button',
+    'blocks/services/form-overlay';
